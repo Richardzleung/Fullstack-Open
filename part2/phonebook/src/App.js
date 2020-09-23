@@ -22,30 +22,22 @@ const App = () => {
   const filteredList = !filter
     ? persons
     : persons.filter(person => person.name.toLowerCase().includes(filter.toLowerCase()))
-
-  const addName= (event) => {   
-    event.preventDefault()
-    if (persons.some(e => e.name === newName)) {
-      window.alert(`${newName} is already added to phonebook`)
-    } 
-    else {
-      const personObject = {
-        name: newName,
-        number: newNumber
-      }    
-      setPersons(persons.concat(personObject))
-      setNewName('')
-      setNewNumber('')
-      setNewFilter('')
-    }
-  }
-
+  
   return (
     <div>
       <h2>Phonebook</h2>
       <Filter filter={filter} handleFilterChange={handleFilterChange}/>
       <h3>Add a new</h3>
-      <PersonForm handleNameChange={handleNameChange} handleNumberChange={handleNumberChange}/>
+      <PersonForm 
+        persons={persons}
+        setPersons={setPersons}
+        newNumber={newNumber} 
+        setNewNumber={setNewNumber}
+        newName={newName} 
+        setNewName={setNewName}
+        setNewFilter={setNewFilter}
+        handleNameChange={handleNameChange} 
+        handleNumberChange={handleNumberChange}/>
       <h3>Numbers</h3>
       <Persons filteredList={filteredList}/>
     </div>
