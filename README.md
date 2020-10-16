@@ -3,4 +3,5 @@
 https://fullstackopen.com/en/
 
 TODO:
-Finish 'Data for counties' in part 2
+Finish: Part 2- 'Data for counties' 
+FIXME: Part 3- error: Validation failed: number: Cannot read property 'ownerDocument' of null, name: Cannot read property 'ownerDocument' of null
