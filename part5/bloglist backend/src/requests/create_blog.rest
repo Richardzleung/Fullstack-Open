@@ -1,0 +1,10 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndoaXRlIiwiaWQiOiI1ZjkzODE1OGZhY2VhMjIxNzA5NzNlOGQiLCJpYXQiOjE2MDM1MDI0NzR9.iyRwEBk3GDUq86qup16s5cLCw0NCPDMznnXYFPv-51g
+
+{
+    "author": "ALCHEMYMEEEEEE",
+    "title": "DEATHLIFE",
+    "url": "SAI.com",
+    "likes": 1000
+}
