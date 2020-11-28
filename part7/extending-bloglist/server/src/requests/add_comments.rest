@@ -1,0 +1,15 @@
+POST http://localhost:3003/api/blogs/5fbc9dcd58f0b9294417e7d3/comments
+Content-Type: application/json
+
+{
+    "author": "ALCHEMYMEEEEEE",
+    "title": "DEATHLIFE",
+    "url": "SAI.com",
+    "likes": 1000,
+    "user": {
+      "username": "ADMIN",
+      "id": "5fbc8855a49bbc06e8dbf3a4"
+    },
+    "comments": "FUCK",
+    "id":"5fbc9dcd58f0b9294417e7d3"
+}

@@ -1,0 +1,13 @@
+PUT http://localhost:3003/api/blogs/5fbb5b39ae92b1329cf6b8cd
+Content-Type: application/json
+
+{
+    "author": "Father",
+    "title": "BECOMING GOD",
+    "url": "Alchemy.com",
+    "likes": 0,
+    "user": {
+      "username": "ADMIN",
+      "id":"5fb9c1b6a4ed0431ccd24888" 
+    }
+}
