@@ -25,16 +25,17 @@ router.post('/:id', (req, res) => {
   try {
     const newDiagnosisEntry = toNewDiagnosisEntry(req.body);
     
-    console.log({newDiagnosisEntry});
-    console.log( typeof newDiagnosisEntry);
-    
-    const addedEntry = diagnosisService.addDiagnosis(newDiagnosisEntry, req.params.id);
-    console.log({addedEntry});
-    res.json(addedEntry);
+    //console.log({newDiagnosisEntry});
+    //console.log( typeof newDiagnosisEntry);
+    if(!(newDiagnosisEntry instanceof Error)) {
+      const addedEntry = diagnosisService.addDiagnosis(newDiagnosisEntry, req.params.id);
+      res.json(addedEntry);
+    }
   } catch(e) {
     res.status(400).send((e as Error).message);
   }
 });
+
 
 router.post('/', (req, res) => {
   try {
