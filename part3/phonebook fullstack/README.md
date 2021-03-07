@@ -1,3 +1,3 @@
 phonebook fullstack
 
-https://mysterious-mesa-13081.herokuapp.com/
+https://simple-early-phonebook.herokuapp.com/
