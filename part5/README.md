@@ -4,7 +4,7 @@ Simple blog app that allows users to save information about blogs they enjoy on 
 listed blog we will save the author, title, url, and amount of upvotes from users of the application. Additional users can be created by sending 
 a POST request to '/api/users'.
 
-Working login:
+# Login:
   username: admin
   password: password
 
