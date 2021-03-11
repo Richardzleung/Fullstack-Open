@@ -5,7 +5,7 @@ listed blog we will save the author, title, url, and amount of upvotes from user
 a POST request to '/api/users'.
 
 # Login:
-  username: admin
+  username: admin  
   password: password
 
 ## Live Site: https://warm-lowlands-34845.herokuapp.com
