@@ -8,7 +8,7 @@ a POST request to '/api/users'.
   username: admin  
   password: password
 
-## Live Site: https://warm-lowlands-34845.herokuapp.com
+## Site: https://warm-lowlands-34845.herokuapp.com
 
 ## Front-End
 * Axios
